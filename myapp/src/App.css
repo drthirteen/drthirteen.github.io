@@ -1,0 +1,83 @@
+.field,
+.fieldX,
+.fieldO,
+.restart,
+.winner,
+.winnerO,
+.winnerX{
+  border-radius: 25px;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border: 5px solid white;
+  background-color: #99c9db;
+  color: white;
+  font-size: 10em;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /*make text unmarkable*/
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+.restart{
+  border-radius: 0px;
+  position: relative;
+  font-size: 1em;
+  width:  150px;
+  height: 50px;
+  float:left;
+  background-color: grey;
+}
+.fieldX,
+.winnerX{
+  background-color: #4c5bce;
+  
+}
+.fieldO,
+.winnerO{
+  background-color: #ce4c4c;
+
+}
+.field:hover,
+.fieldO:hover,
+.fieldX:hover,
+.restart:hover{
+  cursor: pointer;
+}
+.field:hover{
+  background-color: #57bf4c;
+}
+.winner,
+.winnerX,
+.winnerO{
+  margin: auto;
+  width:300px;
+  height:200px;
+  position:absolute;
+  font-size: 3em;
+  left:50%;
+  top:50%;
+  margin:-100px 0 0 -150px;
+}
+.board{
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  width: 600px;
+  height: 600px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.overlay{
+  position: absolute;
+  margin-top:  50px;
+  left: 0;
+  width: 615px;
+  height: 650px;
+  z-index: 10;
+  background-color: rgba(255,255,255,0.7); /*dim the background*/
+}
+
